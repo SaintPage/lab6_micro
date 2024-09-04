@@ -19,7 +19,7 @@ void* calcular_termino(void* args) {
 
 int main() {
     int n_max;
-    std::cout << "Ingrese el valor máximo de n a evaluar en la serie: ";
+    std::cout << "Ingrese el valor maximo de n a evaluar en la serie: ";
     std::cin >> n_max;
 
     std::vector<pthread_t> threads(n_max);    // Vector para almacenar los pthreads

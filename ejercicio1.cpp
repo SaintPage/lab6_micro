@@ -29,7 +29,7 @@ void* calcular_fibonacci(void* arg) {
         params->result = fibN;
     }
     
-    pthread_exit(nullptr);
+    return nullptr;  // Asegura que se retorne nullptr
 }
 
 int main() {
@@ -37,7 +37,7 @@ int main() {
     
     // Pedir al usuario un número entre 0 y 100
     do {
-        cout << "Ingrese un número entre 0 y 100: ";
+        cout << "Ingrese un numero entre 0 y 100: ";
         cin >> num;
     } while (num < 0 || num > 100);
     
@@ -59,7 +59,7 @@ int main() {
     }
     
     // Imprimir la suma total de los números de Fibonacci encontrados
-    cout << "La suma total de los números de Fibonacci hasta F" << num << " es: " << suma_total << endl;
+    cout << "La suma total de los numeros de Fibonacci hasta F" << num << " es: " << suma_total << endl;
     
     return 0;
 }
